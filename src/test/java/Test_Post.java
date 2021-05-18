@@ -28,5 +28,22 @@ public class Test_Post {
 		 	statusCode(201);
 		 
 	}
+	
+	@Test
+    public void testing3get() {
 
-}
+        when().
+                get ("https://reqres.in/api/users/2").
+        then().
+            statusCode(200).log().all();
+    }
+    
+    @Test
+    public void testing4delete() {
+
+        when().
+                delete ("https://reqres.in/api/users/2").
+        then().
+            statusCode(204).log().all();
+
+}}
