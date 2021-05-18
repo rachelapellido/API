@@ -27,7 +27,7 @@ public class Test_Post {
 		 then().
 		 	statusCode(201);
 		 
-	}
+}
 	
 	@Test
     public void testing3get() {
@@ -36,7 +36,7 @@ public class Test_Post {
                 get ("https://reqres.in/api/users/2").
         then().
             statusCode(200).log().all();
-    }
+ }
     
     @Test
     public void testing4delete() {
@@ -46,4 +46,5 @@ public class Test_Post {
         then().
             statusCode(204).log().all();
 
-}}
+    }
+}
